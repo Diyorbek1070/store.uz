@@ -1,0 +1,347 @@
+.workSchedule{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+@mixin fondsize1 {
+    font-size: 15px;
+    line-height: 24px;
+}
+@mixin fondsize2 {
+    font-size: 16px;
+    line-height: 25.6px;
+}
+
+.workSchedule-item{
+    max-width: 950px;
+    h1{
+        color: #00315C;
+        font-size: 40px;
+        line-height: 44px;
+        margin-bottom: 20px;
+        strong{
+            font-weight:700;
+        }
+    }
+    p{
+        font-size: 14px;
+        line-height: 22.4px;
+        color:#4C4C50;
+        font-weight: 300;
+        margin-bottom: 30px;    
+    }
+}
+
+.workSchedule-item_info{
+    padding: 30px;
+    max-width: 100%;
+    border: 1px solid #E9E9EA;
+    border-radius: 10px;
+}
+
+.workSchedule-item2{
+    min-width: 200px;
+    min-height: 675px;
+    border-radius: 10px;
+    background-color: #E9E9EA;
+}
+
+.workSchedule-item_info__item{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.info__item__xiaomi{
+    display: flex;
+    gap: 30px;
+    img{
+        width: 170px;
+        height: 120px;
+    }
+    span{
+        @include fondsize1;
+        color: #1F1F24;
+        font-weight: 300;
+    }
+    svg{
+        @include fondsize1;
+        color: #1F1F24;
+        font-weight: 300;
+    }
+}
+
+.info__item__map{
+    display: flex;
+    gap: 30px;      
+    select{
+        @include fondsize2;
+        color:#00315C;
+        font-weight: 300;
+        align-self: flex-start;
+    }
+    svg{
+        width: 10px;
+        height: 6px;
+        color: #0AA9B4;
+    }
+    iframe{
+        width: 170px;
+        height: 120px;
+        border-radius: 10px;
+        border: none;
+    }
+}
+.workSchedule-item_info_location{
+    b{
+        margin-left: 10px;
+    }
+    svg{
+        width: 15px;
+        line-height: 17px;
+        color: #BCBCBE;
+    }
+}
+.workSchedule-item_info_location>p{
+    @include fondsize2;
+     margin:15px 0px;
+     font-weight: 300;
+     color: #4C4C50; 
+     svg{
+        margin-right: 10px;
+     }
+}
+
+.info_location__item{
+    display: flex;
+    gap: 60px;
+}
+
+.info_location__item__number{
+    display: flex;
+    gap: 10px;
+    a{
+        @include fondsize2;
+        color:#1F1F24;
+        font-weight: 500;
+    }
+    p{
+        @include fondsize1;
+        color:#0AA9B4;
+        font-weight: 400;
+    }
+}
+
+.info_location__item__time{
+    display: flex;  
+    gap: 10px;
+    div{
+        display: flex;
+        flex-direction: column;
+        p{
+            margin: 0;
+            display: flex;
+            gap: 15px;
+            color: #8E8E91;
+            font-size: 16px;
+            line-height: 25.6px;
+            font-weight: 400;
+            span{
+                color: #4C4C50;
+            }
+        }
+    }
+}
+
+.info_location__item__email{
+    div{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        a{
+            color: #0AA9B4;
+            @include fondsize1;
+            font-weight: 400;
+        }
+    }
+}
+
+.info_location__text{
+    @include fondsize2;
+    color: #1F1F24;
+    font-weight: 300;
+}
+.media-map{
+    display: none;
+    iframe{
+        max-width: 280px;
+        height: 105px;
+        border: none;
+        border-radius: 5px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+    select{
+        font-size: 14px;
+        line-height: 22.4px;
+        font-weight: 300;
+        color: #00315C;    
+    }
+}
+
+@media screen and(max-width:1024px){
+    .workSchedule{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 18px;
+        padding-right: 40px;
+    }
+    .workSchedule-item{
+        max-width: 694px;
+    }
+
+    .info__item__xiaomi{
+        img{
+            width: 150px;
+            height: 105px;
+        }
+    }
+    .info__item__map{
+        select{
+            align-self: center;
+        }
+        iframe{
+            width: 150px;
+            height: 105px;
+        }   
+    }
+}
+
+@media screen and(max-width:840px){
+    .workSchedule{
+        padding-right: 40px;
+    }
+    .workSchedule-item2{
+        display: none;
+    }
+}
+
+@media screen and(max-width:625px){
+    .workSchedule{
+        padding: 40px 20px 37px 20px;
+    }
+    .workSchedule-item{
+        padding: 0px;
+        max-width: 320px;
+        h1{
+            color: #00315C;
+            font-size: 26px;
+            line-height: 28.6px;
+            margin-bottom: 10px;
+            strong{
+                font-weight:700;
+            }
+        }
+        p{
+            font-size: 12px;
+            line-height: 19.2px;
+            color:#4C4C50;
+            font-weight: 300;
+            margin-bottom: 30px;    
+        }
+    }
+    .workSchedule-item_info{
+        padding:15px 20px 20px 20px;
+        max-width: 100%;
+        border: 1px solid #E9E9EA;
+        border-radius: 10px;
+    }
+
+    .workSchedule-item_info__item{
+        margin-bottom: 15px;
+    }
+
+    .info__item__xiaomi{
+        display: flex;
+        gap: 15px;
+        img{
+            width: 100px;
+            height: 70px;
+        }
+        p{
+            font-size: 13px;
+            line-height: 20.8px;
+        }
+        span{
+            font-size: 13px;
+            line-height: 20.8px;
+            color: #1F1F24;
+            font-weight: 300;
+        }
+        svg{
+            font-size: 13px;
+            line-height: 20.8px;
+            color: #1F1F24;
+            font-weight: 300;
+        }
+    }
+
+    .info__item__map{
+        display: none;
+    }
+
+    .info_location__item{
+        display: flex;
+        flex-direction: column;
+        gap: 10px 0px;
+    }
+    .workSchedule-item_info_location>p{
+       margin: 10px 0px;
+    }
+
+    .info_location__item__number{
+        div{
+            p{
+                margin:0px 0px 10px 0px;
+                color:#0AA9B4;
+            }
+        }
+    }
+    .info_location__item__time{
+        display: flex;  
+        gap: 10px;
+        div{
+            display: flex;
+            flex-direction: column;
+            p{
+                margin: 0;
+                display: flex;
+                gap: 15px;
+                color: #8E8E91;
+                font-size: 14px;
+                line-height: 22.4px;
+                font-weight: 400;
+                span{
+                    color: #4C4C50;
+                }
+            }
+        }
+    }
+    .info_location__item__email{
+        div{
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            a{
+                font-size: 14px;
+                line-height: 22.4px;
+                color: #0AA9B4;
+                font-weight: 400;
+            }
+        }
+    }
+    .media-map{
+        display: block;
+    }
+}

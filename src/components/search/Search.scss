@@ -1,0 +1,114 @@
+.search{
+    padding-bottom: 25px;
+    border-bottom: 1px solid #E9E9EA;
+}
+.search-item{
+    display: flex;
+    justify-content: space-between;
+    img{
+        height: 40px;
+        width: 40px;
+        align-self: center;
+    }
+}
+
+.search-item__form{
+    display: flex;
+    align-items: center;
+    border: 2px solid #0AA9B4;
+    border-radius: 10px;
+    max-width: 1100px;
+    select{
+        width: 200px;
+        font-size: 18px;
+        height: 100%;
+        color: #1F1F24;
+        border-radius:10px 0px 0px 10px;
+        line-height: 25.2px;
+        outline: none;
+        display: flex;
+        border-right: 2px solid #0AA9B4;
+        align-items: center;   
+        text-indent: 25px;
+    }   
+    input{
+      width: 900px;
+      height:68px;
+      text-indent: 25px;
+    }
+    svg{
+        color: #0AA9B4;
+        width: 20px;
+        height: 20px;
+        margin-right: 25px;
+        cursor: pointer;
+    }
+}
+
+
+@media screen and(max-width:1024px) {
+   .search{
+    padding: 0px 40px 25px 40px;
+   }
+   .search-item__form{
+    max-width: 844px;
+   }
+}
+@media screen and(max-width:970px) {
+    .search{
+        padding: 0px 40px 25px 40px;
+    }
+    .search-item__form{
+     max-width: 744px;
+    }
+ }
+ @media screen and(max-width:840px) {
+    .search{
+        padding: 0px 40px 25px 40px;
+    }
+    .search-item__form{
+     max-width: 644px;
+    }
+ }
+ @media screen and(max-width:775px) {
+    .search{
+        padding: 0px 40px 25px 40px;
+    }
+    .search-item__form{
+     max-width: 544px;
+    }
+ }
+ @media screen and(max-width:625px) {
+    .search{
+        padding: 0px 40px 15px 20px;
+    }  
+    .search-item{
+       img{
+        width: 25px;
+        height: 15px;
+       }
+    }
+    .search-item__form{
+        min-width: 100%;
+        height: 39px;
+        margin-left: 10px;
+        select{
+            width: 87px;
+            height: 39px;
+            font-size: 12px;
+            line-height: 16.8px;
+            text-indent: 10px;
+            font-weight: 400;
+        }
+        input{
+            width: 100%;
+            font-size: 12px;
+            line-height: 16.8px;
+            text-indent: 10px;
+            font-weight: 400;
+        }
+        svg{
+            display: none;
+        }
+    } 
+ }
